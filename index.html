@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <svg style="display: none;">
+        <defs>
+            <symbol id="save" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>save-outline</title>
+                <path d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
+            </symbol>
+
+            <symbol id="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>delete-outline</title>
+                <path
+                    d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z" />
+            </symbol>
+
+            <symbol id="share" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>share-outline</title>
+                <path
+                    d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <div class="container">
+
+        <div class="searchBar">
+            <label for="typing">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>search</title>
+                    <path
+                        d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                </svg>
+            </label>
+            <input type="text" class="typeBar" id="typing" name="typeBar">
+            <div class="trio">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>bell-outline</title>
+                    <path
+                        d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+                </svg>
+                <div class="myIconSmall"><img src="./icons/nobita.jpeg" alt="nobita nobi"></div>
+                <div class="myName">Nobita Nobi</div>
+            </div>
+        </div>
+
+        <div class="taskBar">
+            <div class="myIcon"><img src="./icons/nobita.jpeg" alt="nobita nobi"></div>
+            <div class="sign">
+                <p>Hi there,</p>
+                <p> Nobita nobi
+                <span> (@nobi)</span></p>
+            </div>
+            <button class="new">New gadget</button>
+            <button class="upload">Time travel</button>
+            <button class="share">Share Adventure</button>
+        </div>
+
+        <div class="dashboard">
+            <ul class="firstList">
+                <li class="firstItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>view-dashboard</title>
+                        <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+                    </svg>
+                    <span>Dashboard</span>
+                </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>home</title>
+                        <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                    </svg><span>Home</span></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>profile</title>
+                        <path
+                            d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                    </svg><span>Profile</span></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>message</title>
+                        <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" />
+                    </svg><span>Messages</span></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>history</title>
+                        <path
+                            d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                    </svg><span>History</span></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>task</title>
+                        <path
+                            d="M15,7H20.5L15,1.5V7M8,0H16L22,6V18A2,2 0 0,1 20,20H8C6.89,20 6,19.1 6,18V2A2,2 0 0,1 8,0M4,4V22H20V24H4A2,2 0 0,1 2,22V4H4Z" />
+                    </svg><span>Task</span></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>communities</title>
+                        <path
+                            d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
+                    </svg><span>Communities</span></li>
+
+
+                <li class="secondList"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>settings</title>
+                        <path
+                            d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                    </svg><span>Settings</span></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>support</title>
+                        <path
+                            d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z" />
+                    </svg><span>Support</span></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>privacy</title>
+                        <path
+                            d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z" />
+                    </svg><span>Privacy</span></li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <p>Your Favorite Characters</p>
+            <div class="cards">
+                <div class="card">
+                    <p class="cardTitle">Doraemon</p>
+                    <p class="cardDescription">A blue robotic cat from the 22nd century who travels back in time to help
+                        Nobita. He has a magical pocket filled with futuristic gadgets and loves dorayaki pastries. Despite
+                        being a robot, he's afraid of mice and can't resist helping his friend.</p>
+                    <div class="icons">
+                        <svg>
+                            <use href="#save"></use>
+                        </svg>
+                        <svg>
+                            <use href="#delete"></use>
+                        </svg>
+                        <svg>
+                            <use href="#share"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="cardTitle">Nobita Nobi</p>
+                    <p class="cardDescription">A lazy and clumsy elementary school student who struggles with academics and
+                        sports. Despite his flaws, he has a kind heart and strong sense of justice. With Doraemon's help, he
+                        learns valuable life lessons and grows as a person through various adventures</p>
+                    <div class="icons">
+                        <svg>
+                            <use href="#save"></use>
+                        </svg>
+                        <svg>
+                            <use href="#delete"></use>
+                        </svg>
+                        <svg>
+                            <use href="#share"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="cardTitle">Shizuka Minamoto</p>
+                    <p class="cardDescription">A sweet and intelligent girl who is Nobita's best friend and future wife. She
+                        excels in academics and is talented in music. Known for her kindness and patience, she often helps
+                        Nobita with his problems and enjoys taking baths and playing violin.</p>
+                    <div class="icons">
+                        <svg>
+                            <use href="#save"></use>
+                        </svg>
+                        <svg>
+                            <use href="#delete"></use>
+                        </svg>
+                        <svg>
+                            <use href="#share"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="cardTitle">Takeshi "Gian" Goda</p>
+                    <p class="cardDescription">The neighborhood bully who often picks on Nobita and other smaller kids.
+                        Despite his rough exterior, he cares deeply for his friends and family. He loves singing (though
+                        he's terrible at it) and has dreams of becoming a professional singer.</p>
+                    <div class="icons">
+                        <svg>
+                            <use href="#save"></use>
+                        </svg>
+                        <svg>
+                            <use href="#delete"></use>
+                        </svg>
+                        <svg>
+                            <use href="#share"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="cardTitle">Suneo Honekawa</p>
+                    <p class="cardDescription">A wealthy and cunning boy who is Gian's sidekick. He often shows off his
+                        possessions and excludes Nobita from activities. Despite his arrogant nature, he occasionally shows
+                        genuine friendship and has a talent for arts and crafts.</p>
+                    <div class="icons">
+                        <svg>
+                            <use href="#save"></use>
+                        </svg>
+                        <svg>
+                            <use href="#delete"></use>
+                        </svg>
+                        <svg>
+                            <use href="#share"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="cardTitle">Dorami</p>
+                    <p class="cardDescription">Doraemon's younger sister who is more advanced and reliable than her brother.
+                        She's yellow, has ears, and is excellent at academics. She occasionally visits from the future to
+                        help when Doraemon malfunctions or needs assistance with difficult situations.</p>
+                    <div class="icons">
+                        <svg>
+                            <use href="#save"></use>
+                        </svg>
+                        <svg>
+                            <use href="#delete"></use>
+                        </svg>
+                        <svg>
+                            <use href="#share"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <p>22nd Century News</p>
+            <div class="announce">
+                
+                <ul>
+                    <li>
+                        <p>Time Machine Maintenance</p>
+                        <p>The Time Patrol Department announces routine maintenance for all time travel devices. Please
+                            ensure your Anywhere Door is properly calibrated before interdimensional travel.</p>
+                    </li>
+                    <li>
+                        <p>Dorayaki Festival</p>
+                        <p>Annual Dorayaki Festival begins tomorrow! Special flavors include cosmic cream and
+                            time-traveler's delight. All robotic cats invited to participate in the eating contest.</p>
+                    </li>
+                    <li>
+                        <p>Bamboo Copter Safety</p>
+                        <p>New safety regulations for Bamboo Copter usage. Maximum flight altitude reduced to 100
+                            meters. Remember to always check battery levels before takeoff for safe adventures.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="trend">Trending Characters</p>
+            <div class="trending">
+                
+                <ul>
+                    <li>
+                        <img src="./icons/Doraemon.jpeg" alt="doraemon">
+                        <div>
+                            <p>@doraemon</p>
+                            <p>Gadget Master & Time Traveler</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./icons/Shizuka.jpeg" alt="shizuka">
+                        <div>
+                            <p>@shizuka</p>
+                            <p>Violin Virtuoso & Academic Star</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./icons/gian.jpeg" alt="gian">
+                        <div>
+                            <p>@gian</p>
+                            <p>Neighborhood Singer & Protector</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./icons/suneo.jpeg" alt="suneo">
+                        <div>
+                            <p>@suneo</p>
+                            <p>Rich cool kid</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
