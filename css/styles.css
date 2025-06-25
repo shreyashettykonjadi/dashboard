@@ -8,8 +8,8 @@
 }
 
 svg {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
     fill: white;
 }
 
@@ -78,7 +78,7 @@ div>ul>li>span {
     align-self: center;
     color: white;
     /* font-size: 22px; */
-    font-size: clamp(12px, 2vw, 22px);
+    font-size: clamp(12px, 1.8vw, 20px);
     font-weight: 600;
 }
 
