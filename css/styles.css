@@ -181,8 +181,8 @@ button {
 }
 
 .card {
-    max-width: 28vw;
-    min-height: 32vh;
+    width: clamp(250px, 45%, 600px);
+    height: clamp(200px, 33%, 400px);
     background-color: white;
     border-radius: 1rem;
     padding: 2rem;
@@ -214,7 +214,8 @@ button {
 
 .right {
     background-color: rgb(197, 240, 254);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-column: 3/4;
     grid-row: 3/4;
 }
